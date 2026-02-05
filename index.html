@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>offline | Stay Connected Anywhere, Anytime</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #007AFF; 
+            --secondary: #E5F1FF;
+            --text-main: #1D1D1F;
+            --text-sub: #86868B;
+        }
+        body {
+            background-color: #FFFFFF;
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+        .hero-bg {
+            background: radial-gradient(circle at 70% 30%, #F0F8FF 0%, #FFFFFF 100%);
+        }
+        .btn-primary {
+            background-color: var(--primary);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 122, 255, 0.2);
+        }
+        .card-white {
+            background: #FFFFFF;
+            border: 1px solid #F2F2F7;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+            transition: all 0.3s ease;
+        }
+        .card-white:hover {
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+            transform: translateY(-5px);
+        }
+        .image-zoom {
+            overflow: hidden;
+            border-radius: 2rem;
+        }
+        .image-zoom img {
+            transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .image-zoom:hover img {
+            transform: scale(1.03);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #007AFF 0%, #00C6FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <nav class="fixed w-full z-50 px-6 py-4 flex justify-between items-center bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="text-xl font-bold tracking-tight flex items-center">
+            <span class="text-[#007AFF] mr-1 text-2xl">●</span>offline
+        </div>
+        <a href="#buy" class="px-5 py-2 btn-primary text-white font-semibold text-sm rounded-full">Buy Now</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 hero-bg pt-20">
+        <div class="mb-6 inline-block px-4 py-1 bg-[#E5F1FF] rounded-full text-[#007AFF] text-xs font-bold tracking-widest uppercase">
+            Communication for Everyone
+        </div>
+        <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-8 tracking-tight text-[#1D1D1F]">
+            Make "No Signal"<br><span class="gradient-text">A Thing of the Past.</span>
+        </h1>
+        <p class="text-gray-500 text-lg md:text-xl max-w-2xl font-normal leading-relaxed mb-12">
+            Communicate with friends and family even without a cellular network.<br>
+            offline supports your "need to connect" in every everyday situation.
+        </p>
+        
+        <!-- Hero Image -->
+        <div class="max-w-5xl w-full image-zoom shadow-xl">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1200" alt="[People enjoying smartphones in a bright cafe]" class="w-full h-auto object-cover">
+        </div>
+    </section>
+
+    <!-- Problem & Affinity -->
+    <section class="py-32 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-20">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 italic">No Signal, No Problem.</h2>
+            <p class="text-gray-400 text-lg">Have you ever felt these anxieties when there's no signal?</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <div class="flex items-start">
+                    <div class="w-12 h-12 bg-red-50 text-red-500 rounded-full flex-shrink-0 flex items-center justify-center font-bold">!</div>
+                    <div class="ml-4">
+                        <h3 class="text-xl font-bold mb-2">Disaster Outages</h3>
+                        <p class="text-gray-500 text-sm">The frustration of being unable to check on loved ones when the network goes down during an emergency.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="w-12 h-12 bg-orange-50 text-orange-500 rounded-full flex-shrink-0 flex items-center justify-center font-bold">!</div>
+                    <div class="ml-4">
+                        <h3 class="text-xl font-bold mb-2">Outdoor Isolation</h3>
+                        <p class="text-gray-500 text-sm">Camping, hiking, or music festivals—the places you want to enjoy most are often where the signal is weakest.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="w-12 h-12 bg-gray-50 text-gray-400 rounded-full flex-shrink-0 flex items-center justify-center font-bold">!</div>
+                    <div class="ml-4">
+                        <h3 class="text-xl font-bold mb-2">The Fear of Getting Lost</h3>
+                        <p class="text-gray-500 text-sm">Subways or crowded streets. The fear of losing contact with friends in an instant when your phone becomes a useless brick.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image-zoom border border-gray-100 shadow-sm">
+                <img src="https://images.unsplash.com/photo-1516733958055-af99b2b91b17?auto=format&fit=crop&q=80&w=800" alt="[Person relaxing in beautiful nature]" class="w-full h-[450px] object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution & Technology -->
+    <section class="py-32 bg-[#F5F5F7] px-6">
+        <div class="max-w-7xl mx-auto text-center mb-20">
+            <h2 class="text-4xl font-bold mb-6">Why Choose offline?</h2>
+            <p class="text-gray-500">The next generation of connectivity for everyone, everywhere.</p>
+        </div>
+        
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+            <div class="p-8 card-white rounded-3xl">
+                <div class="w-14 h-14 bg-[#E5F1FF] text-[#007AFF] rounded-2xl mb-6 flex items-center justify-center">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Mesh Network</h3>
+                <p class="text-gray-500 text-sm">Your device becomes a relay point. Everyone nearby stays connected without any special equipment.</p>
+            </div>
+            <div class="p-8 card-white rounded-3xl">
+                <div class="w-14 h-14 bg-[#E5F1FF] text-[#007AFF] rounded-2xl mb-6 flex items-center justify-center">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-3.682A13.93 13.93 0 012.25 12c0-3.517 1.009-6.799 2.753-9.571m11.734 2.231A13.955 13.955 0 0121.75 12c0 3.517-1.009 6.799-2.753 9.571m-3.44-3.682A13.93 13.93 0 0112 21.75c-1.18 0-2.315-.148-3.396-.428m11.13-11.13A13.927 13.927 0 0112 2.25c-1.18 0-2.315.148-3.396.428m0 16.644A13.943 13.943 0 015.25 12c0-1.18.148-2.315.428-3.396m11.13 11.13A13.944 13.943 0 0018.75 12c0-1.18-.148-2.315-.428-3.396m-11.13 0A13.927 13.927 0 0112 2.25c1.18 0 2.315.148 3.396.428m-11.13 11.13L12 12"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Zero Server Dependencies</h3>
+                <p class="text-gray-500 text-sm">Direct communication means zero worries about server failures. Maintain stable connections no matter what.</p>
+            </div>
+            <div class="p-8 card-white rounded-3xl">
+                <div class="w-14 h-14 bg-[#E5F1FF] text-[#007AFF] rounded-2xl mb-6 flex items-center justify-center">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Privacy by Design</h3>
+                <p class="text-gray-500 text-sm">Your messages are strictly between you and your recipient. High-level encryption ensures total security.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lifestyle Showcase -->
+    <section class="py-32 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="image-zoom shadow-lg order-2 md:order-1">
+                <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=800" alt="[Young people walking in a busy city street]" class="w-full h-[500px] object-cover">
+            </div>
+            <div class="order-1 md:order-2">
+                <h2 class="text-4xl font-bold mb-6 tracking-tight">Move Beyond the Grid.</h2>
+                <p class="text-gray-500 text-lg mb-8">
+                    We live in an era where we are expected to be constantly connected.<br>
+                    But that connection shouldn't depend on a carrier's signal tower.<br><br>
+                    <span class="text-[#007AFF] font-bold">offline</span> uses technology to link people directly, creating a world that is more free, more secure, and more reliable.
+                </p>
+                <div class="flex items-center space-x-4">
+                    <span class="text-sm font-bold uppercase tracking-widest text-gray-400">Trusted by 50,000+ users worldwide</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Closing & CTA -->
+    <section id="buy" class="py-40 bg-[#FFFFFF] px-6 text-center border-t border-gray-100">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl md:text-6xl font-extrabold mb-8 tracking-tighter">Freedom in Your Hands.</h2>
+            <p class="text-xl text-gray-500 mb-12">
+                Start your journey towards a worry-free connection today.
+            </p>
+            
+            <div class="mb-12">
+                <span class="text-5xl font-black text-[#1D1D1F]">$149.00</span>
+                <span class="text-xl text-gray-400 line-through ml-3">$199.00</span>
+                <p class="text-sm text-[#007AFF] font-bold mt-2 tracking-widest uppercase">Special Launch Offer</p>
+            </div>
+            
+            <div class="flex flex-col items-center">
+                <button class="w-full md:w-auto px-16 py-6 btn-primary text-white font-bold text-2xl rounded-2xl shadow-xl">
+                    Order offline Now
+                </button>
+                <p class="mt-6 text-sm text-gray-400">Includes a 30-day money-back guarantee</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 px-6 bg-[#F5F5F7] text-center text-gray-400 text-xs">
+        <div class="mb-8 font-bold text-lg text-black tracking-tight flex items-center justify-center">
+            <span class="text-[#007AFF] mr-1 text-2xl">●</span>offline
+        </div>
+        <div class="flex justify-center space-x-8 mb-8 text-gray-500 font-medium">
+            <a href="#" class="hover:text-[#007AFF]">Specs</a>
+            <a href="#" class="hover:text-[#007AFF]">Support</a>
+            <a href="#" class="hover:text-[#007AFF]">Privacy Policy</a>
+        </div>
+        <p>© 2026 OFFLINE TECH CO. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
